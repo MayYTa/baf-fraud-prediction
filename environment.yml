@@ -8,6 +8,7 @@ dependencies:
   - pyarrow
   - scikit-learn
   - lightgbm
+  - xgboost
   - shap
   - matplotlib
   - seaborn
@@ -15,9 +16,10 @@ dependencies:
   - ipykernel
   - pytest
   - ruff
+  - httpx
   - pip
   - pip:
       - mlflow
       - fastapi
       - uvicorn
-      - lightgbm 
+      - -e .
