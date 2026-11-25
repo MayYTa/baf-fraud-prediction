@@ -22,11 +22,9 @@ from fraud.data import MONTH, TARGET, clean
 #  - customer_age: atributo protegido; sin ella el Gini no cambia y la brecha de FPR baja.
 DROPPED = ("velocity_4w", "customer_age")
 
-# TODO: reemplaza por los hiperparámetros de tu lgbm() del notebook para reproducir
-# exactamente el Gini de validación (0.786).
 LGBM_PARAMS: dict = {
-    "n_estimators": 400,
-    "learning_rate": 0.03,
+    "n_estimators": 300,
+    "learning_rate": 0.05,
     "num_leaves": 31,
     "min_child_samples": 50,
     "subsample": 0.8,
